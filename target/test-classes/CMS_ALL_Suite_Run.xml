@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="listenerManager.My_ListenerClass" />
+	</listeners>
+
+	<suite-files>
+		<suite-file path="CAMS_Login_Logout_Test.xml" />
+		<suite-file path="Brand_test.xml" />
+	</suite-files>
+
+</suite> <!-- Suite -->

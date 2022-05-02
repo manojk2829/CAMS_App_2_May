@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CAMS Create Brand Testing">
+	<listeners>
+		<listener class-name="listenerManager.My_ListenerClass" />
+	</listeners>
+	<test name="Brand Creation Test">
+		<classes>
+		<class name="testCases.CMS_Brand_Listing_Page">
+			<methods>
+				<include name="brand_listing_page_test" />				
+			</methods>
+		</class>	
+		
+		<class name="testCases.CMS_Brand_Create_Page">
+			<methods>
+			    <include name="brand_create_page_all_button_validation" />
+				<include name="brand_create_test" />
+				<include name="brand_properties_configuration" />				
+			</methods>
+		</class>
+	</classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->

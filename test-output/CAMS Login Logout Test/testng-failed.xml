@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CAMS Login Logout Test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listenerManager.My_ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Catalog Admin ---- Login Test(failed)">
+    <classes>
+      <class name="testCases.CAMS_Login_Test">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="doing_Login" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.CAMS_Login_Test -->
+    </classes>
+  </test> <!-- Catalog Admin - Login Test(failed) -->
+  <test thread-count="5" name="Catalog Admin ---- Logout Test(failed)">
+    <classes>
+      <class name="testCases.CAMS_Login_Test">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="doing_Login" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.CAMS_Login_Test -->
+      <class name="testCases.CAMS_Logout_Test">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="doing_Logout" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.CAMS_Logout_Test -->
+    </classes>
+  </test> <!-- Catalog Admin - Logout Test(failed) -->
+</suite> <!-- Failed suite [CAMS Login Logout Test] -->

@@ -1,0 +1,29 @@
+GendericKeyWords --
+
+OpenBrowser
+navigate
+type
+click
+select
+wait
+getText
+
+
+ApplicationKeyword --
+
+VerifyLogin
+VerifyLink_Present 
+Verify_All_Page
+
+
+ValidationKeyword --
+
+ValidateTilte
+validatelink_Text
+Validate_Element_present
+Validate_Image
+Validate_Header_Name
+
+
+
+
